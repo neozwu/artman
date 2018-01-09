@@ -168,7 +168,7 @@ RUN curl -SL $DOTNET_SDK_DOWNLOAD_URL --output dotnet.tar.gz \
 # Install couple of git repos
 RUN git clone https://github.com/googleapis/googleapis \
   && cd googleapis \
-  && git checkout b43723b135c41b9f45abcff24689b82ee8d2afcd \
+  && git checkout 94ba270676352628895b3cbb8da12a8fd3dcb88a \
   && cd .. \
   && rm -rf /googleapis/.git/
 RUN git clone https://github.com/googleapis/toolkit \

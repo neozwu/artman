@@ -19,9 +19,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='config.proto',
   package='googleapis.artman',
   syntax='proto3',
-  serialized_pb=_b('\n\x0c\x63onfig.proto\x12\x11googleapis.artman\"e\n\x06\x43onfig\x12+\n\x06\x63ommon\x18\x01 \x01(\x0b\x32\x1b.googleapis.artman.Artifact\x12.\n\tartifacts\x18\x02 \x03(\x0b\x32\x1b.googleapis.artman.Artifact\"\xc2\n\n\x08\x41rtifact\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08\x61pi_name\x18\x02 \x01(\t\x12\x13\n\x0b\x61pi_version\x18\x03 \x01(\t\x12\x19\n\x11organization_name\x18\x04 \x01(\t\x12?\n\rrelease_level\x18\x05 \x01(\x0e\x32(.googleapis.artman.Artifact.ReleaseLevel\x12\x17\n\x0fsrc_proto_paths\x18\x06 \x03(\t\x12?\n\nproto_deps\x18\x07 \x03(\x0b\x32+.googleapis.artman.Artifact.ProtoDependency\x12\x44\n\x0ftest_proto_deps\x18\x08 \x03(\x0b\x32+.googleapis.artman.Artifact.ProtoDependency\x12\x14\n\x0cservice_yaml\x18\t \x01(\t\x12\x12\n\ngapic_yaml\x18\n \x01(\t\x12.\n\x04type\x18\x0c \x01(\x0e\x32 .googleapis.artman.Artifact.Type\x12\x36\n\x08language\x18\r \x01(\x0e\x32$.googleapis.artman.Artifact.Language\x12\x43\n\x0fpackage_version\x18\x0e \x01(\x0b\x32*.googleapis.artman.Artifact.PackageVersion\x12\x42\n\x0fpublish_targets\x18\x0f \x03(\x0b\x32).googleapis.artman.Artifact.PublishTarget\x1a\x1f\n\x0fProtoDependency\x12\x0c\n\x04name\x18\x01 \x01(\t\x1a]\n\x0ePackageVersion\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x1c\n\x14grpc_dep_lower_bound\x18\x02 \x01(\t\x12\x1c\n\x14grpc_dep_upper_bound\x18\x03 \x01(\t\x1a\xb7\x02\n\rPublishTarget\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08location\x18\x02 \x01(\t\x12<\n\x04type\x18\x03 \x01(\x0e\x32..googleapis.artman.Artifact.PublishTarget.Type\x12V\n\x12\x64irectory_mappings\x18\x04 \x03(\x0b\x32:.googleapis.artman.Artifact.PublishTarget.DirectoryMapping\x1a;\n\x10\x44irectoryMapping\x12\x0b\n\x03src\x18\x01 \x01(\t\x12\x0c\n\x04\x64\x65st\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\"3\n\x04Type\x12\x1f\n\x1bPUBLISHING_TYPE_UNSPECIFIED\x10\x00\x12\n\n\x06GITHUB\x10\x01\"J\n\x0cReleaseLevel\x12\x1d\n\x19RELEASE_LEVEL_UNSPECIFIED\x10\x00\x12\x06\n\x02GA\x10\x01\x12\x08\n\x04\x42\x45TA\x10\x02\x12\t\n\x05\x41LPHA\x10\x03\"\\\n\x04Type\x12\t\n\x05GAPIC\x10\x00\x12\x10\n\x0cGAPIC_CONFIG\x10\x01\x12\x08\n\x04GRPC\x10\x02\x12\x0f\n\x0bGRPC_COMMON\x10\x03\x12\x0c\n\x08PROTOBUF\x10\x04\x12\x0e\n\nGAPIC_ONLY\x10\x63\"m\n\x08Language\x12\x18\n\x14LANGUAGE_UNSPECIFIED\x10\x00\x12\x08\n\x04JAVA\x10\x01\x12\n\n\x06PYTHON\x10\x02\x12\n\n\x06NODEJS\x10\x03\x12\x06\n\x02GO\x10\x04\x12\x07\n\x03PHP\x10\x05\x12\n\n\x06\x43SHARP\x10\x06\x12\x08\n\x04RUBY\x10\x07J\x04\x08\x0b\x10\x0cR\x11import_proto_pathb\x06proto3')
+  serialized_pb=_b('\n\x0c\x63onfig.proto\x12\x11googleapis.artman\"e\n\x06\x43onfig\x12+\n\x06\x63ommon\x18\x01 \x01(\x0b\x32\x1b.googleapis.artman.Artifact\x12.\n\tartifacts\x18\x02 \x03(\x0b\x32\x1b.googleapis.artman.Artifact\"\xf1\n\n\x08\x41rtifact\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08\x61pi_name\x18\x02 \x01(\t\x12\x13\n\x0b\x61pi_version\x18\x03 \x01(\t\x12\x19\n\x11organization_name\x18\x04 \x01(\t\x12?\n\rrelease_level\x18\x05 \x01(\x0e\x32(.googleapis.artman.Artifact.ReleaseLevel\x12\x17\n\x0fsrc_proto_paths\x18\x06 \x03(\t\x12?\n\nproto_deps\x18\x07 \x03(\x0b\x32+.googleapis.artman.Artifact.ProtoDependency\x12\x44\n\x0ftest_proto_deps\x18\x08 \x03(\x0b\x32+.googleapis.artman.Artifact.ProtoDependency\x12\x14\n\x0cservice_yaml\x18\t \x01(\t\x12\x12\n\ngapic_yaml\x18\n \x01(\t\x12.\n\x04type\x18\x0c \x01(\x0e\x32 .googleapis.artman.Artifact.Type\x12\x36\n\x08language\x18\r \x01(\x0e\x32$.googleapis.artman.Artifact.Language\x12\x43\n\x0fpackage_version\x18\x0e \x01(\x0b\x32*.googleapis.artman.Artifact.PackageVersion\x12\x42\n\x0fpublish_targets\x18\x0f \x03(\x0b\x32).googleapis.artman.Artifact.PublishTarget\x12\x16\n\x0eskip_proto_gen\x18\x10 \x01(\x08\x12\x15\n\rskip_grpc_gen\x18\x11 \x01(\x08\x1a\x1f\n\x0fProtoDependency\x12\x0c\n\x04name\x18\x01 \x01(\t\x1a]\n\x0ePackageVersion\x12\x0f\n\x07version\x18\x01 \x01(\t\x12\x1c\n\x14grpc_dep_lower_bound\x18\x02 \x01(\t\x12\x1c\n\x14grpc_dep_upper_bound\x18\x03 \x01(\t\x1a\xb7\x02\n\rPublishTarget\x12\x0c\n\x04name\x18\x01 \x01(\t\x12\x10\n\x08location\x18\x02 \x01(\t\x12<\n\x04type\x18\x03 \x01(\x0e\x32..googleapis.artman.Artifact.PublishTarget.Type\x12V\n\x12\x64irectory_mappings\x18\x04 \x03(\x0b\x32:.googleapis.artman.Artifact.PublishTarget.DirectoryMapping\x1a;\n\x10\x44irectoryMapping\x12\x0b\n\x03src\x18\x01 \x01(\t\x12\x0c\n\x04\x64\x65st\x18\x02 \x01(\t\x12\x0c\n\x04name\x18\x03 \x01(\t\"3\n\x04Type\x12\x1f\n\x1bPUBLISHING_TYPE_UNSPECIFIED\x10\x00\x12\n\n\x06GITHUB\x10\x01\"J\n\x0cReleaseLevel\x12\x1d\n\x19RELEASE_LEVEL_UNSPECIFIED\x10\x00\x12\x06\n\x02GA\x10\x01\x12\x08\n\x04\x42\x45TA\x10\x02\x12\t\n\x05\x41LPHA\x10\x03\"\\\n\x04Type\x12\t\n\x05GAPIC\x10\x00\x12\x10\n\x0cGAPIC_CONFIG\x10\x01\x12\x08\n\x04GRPC\x10\x02\x12\x0f\n\x0bGRPC_COMMON\x10\x03\x12\x0c\n\x08PROTOBUF\x10\x04\x12\x0e\n\nGAPIC_ONLY\x10\x63\"m\n\x08Language\x12\x18\n\x14LANGUAGE_UNSPECIFIED\x10\x00\x12\x08\n\x04JAVA\x10\x01\x12\n\n\x06PYTHON\x10\x02\x12\n\n\x06NODEJS\x10\x03\x12\x06\n\x02GO\x10\x04\x12\x07\n\x03PHP\x10\x05\x12\n\n\x06\x43SHARP\x10\x06\x12\x08\n\x04RUBY\x10\x07J\x04\x08\x0b\x10\x0cR\x11import_proto_pathb\x06proto3')
 )
-_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 
 
@@ -42,8 +41,8 @@ _ARTIFACT_PUBLISHTARGET_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1128,
-  serialized_end=1179,
+  serialized_start=1175,
+  serialized_end=1226,
 )
 _sym_db.RegisterEnumDescriptor(_ARTIFACT_PUBLISHTARGET_TYPE)
 
@@ -72,8 +71,8 @@ _ARTIFACT_RELEASELEVEL = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1181,
-  serialized_end=1255,
+  serialized_start=1228,
+  serialized_end=1302,
 )
 _sym_db.RegisterEnumDescriptor(_ARTIFACT_RELEASELEVEL)
 
@@ -110,8 +109,8 @@ _ARTIFACT_TYPE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1257,
-  serialized_end=1349,
+  serialized_start=1304,
+  serialized_end=1396,
 )
 _sym_db.RegisterEnumDescriptor(_ARTIFACT_TYPE)
 
@@ -156,8 +155,8 @@ _ARTIFACT_LANGUAGE = _descriptor.EnumDescriptor(
   ],
   containing_type=None,
   options=None,
-  serialized_start=1351,
-  serialized_end=1460,
+  serialized_start=1398,
+  serialized_end=1507,
 )
 _sym_db.RegisterEnumDescriptor(_ARTIFACT_LANGUAGE)
 
@@ -175,14 +174,14 @@ _CONFIG = _descriptor.Descriptor(
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='artifacts', full_name='googleapis.artman.Config.artifacts', index=1,
       number=2, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -213,7 +212,7 @@ _ARTIFACT_PROTODEPENDENCY = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -226,8 +225,8 @@ _ARTIFACT_PROTODEPENDENCY = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=739,
-  serialized_end=770,
+  serialized_start=786,
+  serialized_end=817,
 )
 
 _ARTIFACT_PACKAGEVERSION = _descriptor.Descriptor(
@@ -243,21 +242,21 @@ _ARTIFACT_PACKAGEVERSION = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='grpc_dep_lower_bound', full_name='googleapis.artman.Artifact.PackageVersion.grpc_dep_lower_bound', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='grpc_dep_upper_bound', full_name='googleapis.artman.Artifact.PackageVersion.grpc_dep_upper_bound', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -270,8 +269,8 @@ _ARTIFACT_PACKAGEVERSION = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=772,
-  serialized_end=865,
+  serialized_start=819,
+  serialized_end=912,
 )
 
 _ARTIFACT_PUBLISHTARGET_DIRECTORYMAPPING = _descriptor.Descriptor(
@@ -287,21 +286,21 @@ _ARTIFACT_PUBLISHTARGET_DIRECTORYMAPPING = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='dest', full_name='googleapis.artman.Artifact.PublishTarget.DirectoryMapping.dest', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='name', full_name='googleapis.artman.Artifact.PublishTarget.DirectoryMapping.name', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -314,8 +313,8 @@ _ARTIFACT_PUBLISHTARGET_DIRECTORYMAPPING = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=1067,
-  serialized_end=1126,
+  serialized_start=1114,
+  serialized_end=1173,
 )
 
 _ARTIFACT_PUBLISHTARGET = _descriptor.Descriptor(
@@ -331,28 +330,28 @@ _ARTIFACT_PUBLISHTARGET = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='location', full_name='googleapis.artman.Artifact.PublishTarget.location', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='type', full_name='googleapis.artman.Artifact.PublishTarget.type', index=2,
       number=3, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='directory_mappings', full_name='googleapis.artman.Artifact.PublishTarget.directory_mappings', index=3,
       number=4, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -366,8 +365,8 @@ _ARTIFACT_PUBLISHTARGET = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=868,
-  serialized_end=1179,
+  serialized_start=915,
+  serialized_end=1226,
 )
 
 _ARTIFACT = _descriptor.Descriptor(
@@ -383,98 +382,112 @@ _ARTIFACT = _descriptor.Descriptor(
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='api_name', full_name='googleapis.artman.Artifact.api_name', index=1,
       number=2, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='api_version', full_name='googleapis.artman.Artifact.api_version', index=2,
       number=3, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='organization_name', full_name='googleapis.artman.Artifact.organization_name', index=3,
       number=4, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='release_level', full_name='googleapis.artman.Artifact.release_level', index=4,
       number=5, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='src_proto_paths', full_name='googleapis.artman.Artifact.src_proto_paths', index=5,
       number=6, type=9, cpp_type=9, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='proto_deps', full_name='googleapis.artman.Artifact.proto_deps', index=6,
       number=7, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='test_proto_deps', full_name='googleapis.artman.Artifact.test_proto_deps', index=7,
       number=8, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='service_yaml', full_name='googleapis.artman.Artifact.service_yaml', index=8,
       number=9, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='gapic_yaml', full_name='googleapis.artman.Artifact.gapic_yaml', index=9,
       number=10, type=9, cpp_type=9, label=1,
       has_default_value=False, default_value=_b("").decode('utf-8'),
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='type', full_name='googleapis.artman.Artifact.type', index=10,
       number=12, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='language', full_name='googleapis.artman.Artifact.language', index=11,
       number=13, type=14, cpp_type=8, label=1,
       has_default_value=False, default_value=0,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='package_version', full_name='googleapis.artman.Artifact.package_version', index=12,
       number=14, type=11, cpp_type=10, label=1,
       has_default_value=False, default_value=None,
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
     _descriptor.FieldDescriptor(
       name='publish_targets', full_name='googleapis.artman.Artifact.publish_targets', index=13,
       number=15, type=11, cpp_type=10, label=3,
       has_default_value=False, default_value=[],
       message_type=None, enum_type=None, containing_type=None,
       is_extension=False, extension_scope=None,
-      options=None),
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='skip_proto_gen', full_name='googleapis.artman.Artifact.skip_proto_gen', index=14,
+      number=16, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
+    _descriptor.FieldDescriptor(
+      name='skip_grpc_gen', full_name='googleapis.artman.Artifact.skip_grpc_gen', index=15,
+      number=17, type=8, cpp_type=7, label=1,
+      has_default_value=False, default_value=False,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None, file=DESCRIPTOR),
   ],
   extensions=[
   ],
@@ -491,7 +504,7 @@ _ARTIFACT = _descriptor.Descriptor(
   oneofs=[
   ],
   serialized_start=139,
-  serialized_end=1485,
+  serialized_end=1532,
 )
 
 _CONFIG.fields_by_name['common'].message_type = _ARTIFACT
@@ -515,6 +528,7 @@ _ARTIFACT_TYPE.containing_type = _ARTIFACT
 _ARTIFACT_LANGUAGE.containing_type = _ARTIFACT
 DESCRIPTOR.message_types_by_name['Config'] = _CONFIG
 DESCRIPTOR.message_types_by_name['Artifact'] = _ARTIFACT
+_sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
 Config = _reflection.GeneratedProtocolMessageType('Config', (_message.Message,), dict(
   DESCRIPTOR = _CONFIG,

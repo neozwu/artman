@@ -89,6 +89,9 @@ def convert_to_legacy_config_dict(artifact_config, root_dir, output_dir):
             Artifact.ReleaseLevel.Name(
                 artifact_config.release_level).lower())
 
+    language_config_dict['skip_grpc_gen'] = artifact_config.skip_grpc_gen
+    language_config_dict['skip_proto_gen'] = artifact_config.skip_proto_gen
+
     # Convert package version configuration.
     pv = artifact_config.package_version
     if pv:

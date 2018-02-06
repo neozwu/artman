@@ -91,24 +91,30 @@ class _RubyGrpcTaskFactory(GrpcTaskFactoryBase):
 class _JavaGrpcTaskFactory(GrpcTaskFactoryBase):
 
     def get_grpc_codegen_tasks(self, **kwargs):
-        return [
-            protoc_tasks.ProtoDescGenTask,
-            protoc_tasks.GrpcCodeGenTask,
-            package_metadata_tasks.JavaGrpcPackageMetadataConfigGenTask,
-            package_metadata_tasks.GrpcPackageMetadataGenTask,
-        ]
+        if 'skip_grpc_gen' in kwargs and kwargs['skip_grpc_gen']:
+            return []
+        else:
+            return [
+                protoc_tasks.ProtoDescGenTask,
+                protoc_tasks.GrpcCodeGenTask,
+                package_metadata_tasks.JavaGrpcPackageMetadataConfigGenTask,
+                package_metadata_tasks.GrpcPackageMetadataGenTask,
+            ]
 
 
 class _JavaProtoTaskFactory(GrpcTaskFactoryBase):
 
     def get_grpc_codegen_tasks(self, **kwargs):
-        return [
-            protoc_tasks.ProtoDescGenTask,
-            protoc_tasks.ProtoCodeGenTask,
-            package_metadata_tasks.JavaProtoPackageMetadataConfigGenTask,
-            package_metadata_tasks.ProtoPackageMetadataGenTask,
-            protoc_tasks.JavaProtoCopyTask,
-        ]
+        if 'skip_proto_gen' in kwargs and kwargs['skip_proto_gen']:
+            return []
+        else:
+            return [
+                protoc_tasks.ProtoDescGenTask,
+                protoc_tasks.ProtoCodeGenTask,
+                package_metadata_tasks.JavaProtoPackageMetadataConfigGenTask,
+                package_metadata_tasks.ProtoPackageMetadataGenTask,
+                protoc_tasks.JavaProtoCopyTask,
+            ]
 
 
 class _PythonGrpcTaskFactory(GrpcTaskFactoryBase):

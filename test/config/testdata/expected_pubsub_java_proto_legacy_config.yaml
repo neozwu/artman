@@ -31,3 +31,5 @@ java:
       - dest: generated/java/proto-google-cloud-pubsub-v1
         src: /tmp/output/java/proto-google-cloud-pubsub-v1
   release_level: beta
+  skip_grpc_gen: false
+  skip_proto_gen: false

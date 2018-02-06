@@ -34,3 +34,5 @@ python:
       - dest: generated/python/gapic-google-cloud-pubsub-v1
         src: /tmp/output/gapic-google-cloud-pubsub-v1
   release_level: beta
+  skip_grpc_gen: false
+  skip_proto_gen: false

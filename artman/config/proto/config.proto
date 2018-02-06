@@ -313,4 +313,10 @@ message Artifact {
   // Note: when `--dry-run` is specified, the publishing command will do
   // everything except the real publishing step.
   repeated PublishTarget publish_targets = 15;
+
+  // Optional. If specified, proto code gen tasks will be skipped.
+  bool skip_proto_gen = 16;
+
+  // Optional. If specified, grpc code gen tasks will be skipped.
+  bool skip_grpc_gen = 17;
 }
